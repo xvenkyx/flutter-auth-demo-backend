@@ -8,7 +8,7 @@ const connectDb = async () => {
       dbConfig.database,
       {
         useNewUrlParser: true,
-        useUnifiedTopology: true,
+        useUnifiedTopology: false,
       }
     )
     console.log(`MongoDB Connected: ${conn.connection.host}`)
